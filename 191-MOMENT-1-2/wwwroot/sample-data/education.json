@@ -1,0 +1,17 @@
+﻿[
+  {
+    "period": 1,
+    "name": "Webbutveckling I",
+    "progression": "A"
+  },
+  {
+    "period": 3,
+    "name": "Webbutveckling II",
+    "progression": "B"
+  },
+  {
+    "period": 4,
+    "name": "Webbutveckling III",
+    "progression": "B"
+  }
+]
