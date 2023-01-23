@@ -6,6 +6,10 @@
     html {
         font-size: 16px;
     }
+
+    .collapse {
+        display: block;
+    }
 }
 
 html {
@@ -52,8 +56,12 @@ body {
     margin-bottom: 3%;
 }
 
-sidebar {
+.sidebar {
     margin-right: 3%;
+}
+
+.navbar-toggler {
+ display: none;
 }
 
 
@@ -76,7 +84,7 @@ sidebar {
         float: none;
         font-size: 1.35em;
     }
-/*
+
     .navbar-toggler {
         float: none;
         color: black;
@@ -104,17 +112,26 @@ sidebar {
         margin-top: 5%;
         margin-right: 5%;
     }
-    */
+    
     .center {
         margin-top: 1%;
         margin-bottom: 1%;
     }
 
-    sidebar {
+    .sidebar {
         margin-right: 0%;
     }
-}
 
+    .navbar-toggler {
+        border: dashed;
+        padding-right: 35px;
+        display: block;
+    }
+
+    .wide {
+        display: none;
+    }
+}
 
 /*
 html, body {

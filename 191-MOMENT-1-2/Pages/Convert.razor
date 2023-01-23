@@ -9,12 +9,34 @@
 
 <h2>Convert meters to feet</h2>
 
-<p>...</p>
-
+<h4>Meters: </h4>
+<input type="number" class="form-control-lg" @bind="Meter" />
+<br />
+<br />
+<button class="btn btn-danger" @onclick="Calculate">Calculate!</button>
+<br />
+<br />
+<h4>@Meter meters in feet: @Feet</h4>
+<br />
+<br />
 <h2>Convert kps to mps</h2>
 
 <p>...</p>
 
+
+@code{
+    private double FeetNo = 3.28;
+
+    private double Feet = 3.28;
+
+    private double Meter = 1.00;
+
+    private void Calculate()
+    {
+        Feet = Math.Ceiling(Meter * FeetNo);
+    }
+
+}
 
 <style>
     .convert {

@@ -2,20 +2,5 @@
     <div class="container top">
         <img src='/assets/MGG-logotype.jpg' class="img-fluid img" id="figure" />
         <div class="datetop"> Dagens datum är: @DateTime.Now.ToString("yyy/MM/dd") </div>
-
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
     </div>
 </header>
-
-@code {
-    private bool collapseNavMenu = true;
-
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
-}
