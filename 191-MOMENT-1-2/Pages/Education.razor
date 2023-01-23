@@ -1,5 +1,5 @@
 ﻿@page "/education"
-@inject HttpClient Http
+
 
 <PageTitle>EDUCATION</PageTitle>
 
@@ -20,44 +20,8 @@
     }
 </p>
 
-<strong>A few courses:</strong>
+<List Title="A few courses:" />
 
-@if (courses == null)
-{
-    <p><em>Loading courses...</em></p>
-}
-
-else
-{
-    <ul>
-        @foreach (var str in courses)
-        {
-            <li>
-                Course: @str.Name <br>
-                Period: @str.Period <br>
-                Progression: @str.Progression
-            </li>
-        }
-    </ul>
-}
-
-@code {
-    private Courses[]? courses;
-
-    protected override async Task OnInitializedAsync()
-    {
-        courses = await Http.GetFromJsonAsync<Courses[]>("sample-data/education.json");
-    }
-
-    public class Courses
-    {
-        public int Period { get; set; }
-
-        public string Name { get; set; }
-
-        public string Progression { get; set; }
-    }
-}
 
 
 <style>
